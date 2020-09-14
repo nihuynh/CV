@@ -1,0 +1,9 @@
+# Customs
+.DS_Store
+CV*.aux
+CV*.fls
+CV*.log
+CV*.fdb_latexmk
+CV*.synctex.gz
+CV*.out
+_*_temp.*
