@@ -1,0 +1,109 @@
+% CV Nicolas Huynh
+\def\versionWORLD{} % Comment this line for the french version
+\ifx\versionWORLD\undefined
+  \newcommand{\multilang}[2]{{#1}}
+\else
+  \newcommand{\multilang}[2]{{#2}}
+\fi
+
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[purple]{classic}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}
+\usepackage[utf8]{inputenc}
+\usepackage[\multilang{french}{english}]{babel}
+
+% Personal data
+\name{Nicolas}{Huynh}
+\title{\multilang{Développeur embarqué C / Linux}{Embedded software engineer C / Linux}}
+\address{.}{\multilang{92130 Issy-les-Moulineaux}{Paris}}{France}
+\phone[fixed]{+33~675~168~302}
+\email{nico.huynh@gmail.com}
+\social[linkedin][www.linkedin.com/in/nicolas-huynh-09a342b4/]{Linkedin}
+\social[github][www.github.com/nihuynh]{github.com/nihuynh}
+% Photo
+\ifx\versionWORLD\undefined
+\photo[80pt][0pt]{nh128.png}
+\fi
+
+\begin{document}
+\hbadness=10000
+% \vspace*{2\baselineskip}
+\makecvtitle
+
+% ==XP==
+\section{\multilang{Expériences}{Work experience}}
+
+\ifx\versionWORLD\undefined
+\cventry{2022-}{Consultant embarqué C / Linux}{\href{https://www.bouyguestelecom.fr}{Bouygues Telecom}}{IdF}{}
+{}
+\cventry{2021-2022}{Consultant Python}{\href{https://www.klanik.com}{Klanik}}{Remote}{}
+{Développeur recherche \& development sur un SaaS d'audit comptable}
+\cventry{2021}{Consultant rédaction technique}{\href{https://www.stormshield.com}{Stormshield}}{Remote}{}
+{Rédaction d'une documentation avec l'outil Doxygen.}
+\cventry{2020}{Développeur Python}{Flyinstinct}{Paris}{Stage}
+{Réalisation d’une interface homme-machine au sein d'une start-up visant à digitaliser l’inspection de grands sites industriels (Pistes d'aéroport).}
+\cventry{2019}{\href{https://github.com/nihuynh/RT}{Projet pédagogique de Ray-Tracing}}{Ecole 42}{Paris}{}
+{Projet en groupe de 3 (Computer graphic).}
+\cventry{2018}{Réalisations techniques pour Escape Game}{\href{https://www.tempetesousuncrane.com}{TSUC}}{Paris}{}
+{Design, mise en place et maintenance de systèmes mécaniques et électroniques aux spécifications du game designer.}
+% ==Extended XP==
+% \cventry{2016}{EWP: projet de 11 semaines}{\href{http://www.fimatec-ing.com/}{Fimatec}}{Lille}{}{Etude pour développer un récupérateur de chaleur pour les datacenters.}
+% \cventry{2015}{Projet de conception mécanique}{}{Lille}{}{Projet en binome de conception d'un tricycle électrique (Liaison au sol, veille technologique).}
+
+\else
+\cventry{2022-}{Embedded software engineer C / Linux}{\href{https://www.bouyguestelecom.fr}{Bouygues Telecom}}{France}{}
+{}
+\cventry{2021-2022}{Software Engineer Python}{\href{https://www.klanik.com}{Klanik}}{Remote}{}
+{Software development of an accounting SaaS}
+\cventry{2021}{Technical writer}{\href{https://www.stormshield.com}{Stormshield}}{Remote}{}
+{Technical writer on C Legacy code using Doxygen.}
+\cventry{2020}{Software Engineer Python}{Flyinstinct}{Paris}{Internship}{Built a user interface to display informations collected by cameras during an inspection of an airport runway.}
+\cventry{2018}{Design for Escape Game}{Freelance}{Paris}{}{Design and production of puzzles for escape game using 3D printing and laser cut.}
+\fi
+
+
+% ==Formation==
+\section{\multilang{Formations}{Education}}
+\cventry{2018-2021}{\href{https://www.42.fr}{Ecole 42}}{}{Paris}{}{\multilang{Formation peer-to-peer aux métiers du numérique.}{Disruptive Software Engineering Program.}}
+\cventry{2013-2017}{\href{https://www.hei.fr}{\multilang{Ecole d’ingénieur HEI}{Engineering school}}}{}{Lille}{}{\multilang{Formation d’ingénieur généraliste - spécialité conception mécanique.}{General engineering school - Major: Mechanical Engineering.}}
+\cventry{2010-2012}{\multilang{Classes Préparatoires PCSI}{PCSI Preparatory school}}{HEI}{Lille}{}{\multilang{}{{Two-year intensive program preparing for Engineering school.}}}
+\cventry{2010}{\multilang{Baccalauréat S}{Baccalaureat Major: Mathematics}}{Edgar Poe}{Paris}{}{}
+
+% ==Skills==
+\section{\multilang{Compétences}{Languages and computer skills}}
+\cvitem{\multilang{Principales}{Core}}{C, Python, Rust, Shell/Bash, Makefile, Git}
+\cvitem{\multilang{Connaissances}{Basics}}{CI/CD, C++, Latex, Docker, Django, Javascript, PHP, Mathematica}
+% \cvitem{\multilang{CAO}{CAD}}{Catia V5 (FAO), SolidWorks (Optimisation), Onshape}
+\cvitem{\multilang{Autres}{Others}}{Arduino, Raspberry pi, PCB design (Eagle), CAO, découpe laser, impression 3D}
+\ifx\versionWORLD\undefined
+\cvlanguage{Francais}{Langue maternelle}{}
+\cvlanguage{Anglais}{Niveau courant (C1)}{}
+\else
+\cvlanguage{French}{Native}{}
+\cvlanguage{English}{Fluent (C1)}{}
+\fi
+
+% ==Misc==
+\section{\multilang{Centres d'intérêt}{Miscellaneous}}
+\ifx\versionWORLD\undefined
+\cvitem{}{Escalade, Cuisine francaise et du monde, cyclisme (Paris-Utrecht durant l'été 2015)}
+\cvitem{}{Voyages (Asie, Europe), sports d'hiver, jeux vidéo}
+\cvitem{}{Fall Challenge Coding Game 2020 (500eme / 7k), Participation aux 24h de l'innovation (2015), finale du meilleur dev de France (2018)}
+\else
+\cvitem{}{Fall Challenge Coding Game 2020 (top 500eme over 7000), Participation to "24h de l'innovation (2015)", Finalist for the MDF2018 (Best dev of France)}
+\cvitem{}{Cooking, climbing, cycling (Paris-Utrecht during summer 2015)}
+\cvitem{}{Travel (Asia, Europe), snowboard and video games}
+\fi
+
+% ==Formating footer==
+\ifx\versionWORLD\undefined
+\bigskip
+\bigskip
+\bigskip
+\centerline{\rule{5cm}{0.4pt}}
+\else
+
+\fi
+\end{document}
+

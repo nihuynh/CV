@@ -1,0 +1,17 @@
+% \def\versionUS{}
+\ifx\versionUS\undefined
+\newcommand{\multilang}[2]{{#1}}
+\else
+\newcommand{\multilang}[2]{{#2}}
+\fi
+
+\documentclass{article}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+\multilang{Bonjour baguette!}{Hello, world!}
+
+\ifx\versionUS\undefined
+photo
+\fi
+\end{document}

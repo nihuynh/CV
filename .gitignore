@@ -1,0 +1,10 @@
+# Customs
+.DS_Store
+*.aux
+*.fls
+*.log
+*.fdb_latexmk
+*.synctex.gz
+*.out
+_*_temp.*
+playground/multilang.pdf
